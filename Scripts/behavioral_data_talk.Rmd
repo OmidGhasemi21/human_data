@@ -1,0 +1,303 @@
+---
+title: '<div class="jumbotron"><h1 class="title toc-ignore display-3">Studying Human Behaviour: From Testing to Publishing</h1></div>'
+author: | 
+  | Omid Ghasemi
+  | PhD Student at Macquarie University
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    #theme: spacelab
+    theme: darkly
+    highlight: kate
+    number_sections: false
+    code_download: true
+    code_folding: hide
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.align="center")
+knitr::opts_chunk$set(dev = "png",
+                      cache = FALSE)
+```
+
+```{r packageload, echo=FALSE, message=FALSE}
+library(here)
+library("tidyverse")
+```
+
+
+
+
+<style>
+a:visited {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+</style>
+
+
+
+
+
+
+
+
+
+# Data Collection
+
+
+
+## Experiment Softwares
+
+
+
+### Psychopy
+
+PsychoPy is an free cross-platform package allowing you run a wide range of in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics...) (Source: [Psychopy website](https://www.psychopy.org/)).
+
+```{r echo=F, out.width='90%'}
+knitr::include_graphics(here('Input','psychopy1.png'))
+```
+
+  - Build your first PsychoPy experiment [Link](https://www.youtube.com/watch?v=VV6qhuQgsiI&t=35s)\ 
+
+  - Build the Posner cueing task [Link](https://www.youtube.com/watch?v=ZQd2QEK_Gn4)\ 
+
+  - A series of tutorials for building a memory task [Link](https://www.youtube.com/watch?v=9BqRyut2UZk)\ 
+  
+  - Create basic components using the coder view [link](https://www.djmannion.net/psych_programming/vision/intro/intro.html)
+  
+  - *Book*: Building Experiments in PsychoPy (by Jonathan Peirce and Michael MacAskill) [link](https://www.amazon.com.au/Building-Experiments-PsychoPy-Jonathan-Peirce/dp/1473991390)
+  
+  - *Book*: Programming Visual Illusions for Everyone (by Marco Bertamini) [link](https://www.amazon.com.au/Programming-Visual-Illusions-Everyone-Bertamini/dp/3319640658)
+  
+  - *Paper*: PsychoPy2: Experiments in behavior made easy [link](https://www.ncbi.nlm.nih.gov/pubmed/30734206)
+  
+  - Get stuck? Ask your questions [here](https://discourse.psychopy.org/)
+
+
+
+## Online Platforms
+
+### Qualtrics
+
+```{r echo=F, out.width='70%'}
+knitr::include_graphics(here('Input','qualtrics1.png'))
+```
+
+  - Demo: A simple numeracy task [link](https://mqedu.qualtrics.com/jfe/form/SV_4JDPzVOvnHHeulT)
+
+  - A nice introduction to making a qualtrics survey [link](https://www.youtube.com/watch?v=xkSUKTdD1Hs&t=300s)
+
+  - Qualtrics Beginner Tutorial [part 1](https://www.youtube.com/watch?v=_hSo-ldj19k) and [part 2](https://www.youtube.com/watch?v=MP6jTcHU_5w&t=682s)
+
+  - And a more advanced Qualtrics tutorial [link](https://www.youtube.com/watch?v=Y1-jtA-XjFQ&t=201s)
+
+
+### Psychopy (PsychoJS)/Pavlovia
+
+PsychoJS is a JavaScript library that makes it possible to run neuroscience, psychology, and psychophysics experiments in a browser. It is the online counterpart of the PsychoPy Python library (Source: [PsychoJs repository](https://github.com/psychopy/psychojs)). *Pavlovia.org* is a site created by the PsychoPy team to make it easy to run studies online, host your experiments, share studies with other scientists, and version control your work (Source: [Psychopy website](https://www.psychopy.org/online/usingPavlovia.html)).
+
+```{r echo=F, out.width='90%'}
+knitr::include_graphics(here('Input','psychopy3.png'))
+```
+
+
+  - Demo: The Posner task [link](https://run.pavlovia.org/demos/posner/html/)
+
+  - Upload your Psychopy experiment to Pavlovia [link](https://www.youtube.com/watch?v=bprYeBzkUc8&list=PLqOrbdKW_WFR8EBBCr1qPPOemz0wwBkgE)
+
+  - Running your experiment on Pavlovia.org [link](https://www.psychopy.org/online/usingPavlovia.html)
+
+  - *Paper*: The timing mega-study: comparing a range of experiment generators, both lab-based and online [link](https://psyarxiv.com/d6nu5/)
+
+  - Get stuck? Ask your questions [here](https://discourse.psychopy.org/)
+
+
+### Gorilla
+
+The Gorilla Experiment Builder is a cloud based research platform that allows researchers and students to quickly and easily create and deploy behavioural (reaction-time) experiments online (Source: [Gorilla website](https://gorilla.sc/info/behaviouralresearch))
+
+```{r echo=F, out.width='70%'}
+knitr::include_graphics(here('Input','gorilla1.png'))
+```
+
+  - Demo: The dot-probe task [link](https://research.sc/task/1416119)
+
+  - Getting started with Gorilla [link](https://www.youtube.com/channel/UCBot45mWWf-Va3PcWJJX67w)
+
+  - Gorilla support page [link](https://gorilla.sc/support)
+
+  - Gorilla Demos and Examples List [link](https://gorilla.sc/support/samples)
+
+  - *Paper*: Gorilla in our midst: An online behavioral experiment builder [link](https://link.springer.com/article/10.3758/s13428-019-01237-x)
+
+
+### JsPsych:
+
+jsPsych is a JavaScript library for running behavioral experiments in a web browser. The library provides a flexible framework for building a wide range of laboratory-like experiments that can be run online (Source: [jsPsych website](https://www.jspsych.org/))
+
+  - Create a simple Reaction Time Task [link](https://www.jspsych.org/tutorials/rt-task/)
+
+  - A more detailed tutorial on jsPsych and Google app engine [link](http://ccss.djnavarro.net/talks/2017/UNSWCCS_browser.pdf)
+
+  - Online linguistics experiments using jsPsych (Na-Young Ry, 2018) [link](http://individual.utoronto.ca/rrrnny/online.html)
+
+  - *Paper*: jsPsych: A JavaScript library for creating behavioral experiments in a Web browser [link](https://link.springer.com/article/10.3758/s13428-014-0458-y)
+
+
+
+### Jaysire:
+
+The goal of jaysire is to provide a method for writing behavioural experiments in R that can be deployed through a web browser. The package relies on the jsPsych library by Josh de Leeuw (GitHub page) to create the experiments, and is structured so that functions in jaysire use the same argument names as the corresponding jsPsych functions (Source: [jaysire repository](https://github.com/djnavarro/jaysire)).
+
+
+  - Demo: A choice reaction time task [link](http://jaysire.djnavarro.net/demos/example08/experiment/index.html)
+
+  - Create an online experiment using Jaysire [part 1](https://cskemp.github.io/chdss2019_content/day2/slides/1-experiment-motivation-handout.pdf) [part 2](https://cskemp.github.io/chdss2019_content/day2/slides/3-template-experiment-handout.pdf) [part 3](https://cskemp.github.io/chdss2019_content/day2/slides/4-more-complex-experiments-handout.pdf)
+
+  - Behavioural experiments with jaysire [link](https://github.com/OmidGhasemi21/jaysire)
+
+
+### REDCap
+REDCap is a secure web application for building and managing online surveys and databases. While REDCap can be used to collect virtually any type of data, it is specifically geared to support online or offline data capture for research studies and operations (Source: [project-redcap.org](https://www.project-redcap.org/)).
+
+
+
+
+# Data Cleaning and Analysis
+
+## R
+
+  - Book: R for data science [link](https://r4ds.had.co.nz/index.html)
+
+  - Book: ggplot2: Elegant Graphics for Data Analysis [link](https://ggplot2-book.org/index.htm)
+
+  - Book: Fundamentals of Data Visualization [link](Fundamentals of Data Visualization)
+
+  - Book: Learning statistics with R: A tutorial for psychology students and other beginners [link](https://learningstatisticswithr.com/book/)
+
+  - Book: R for Psychology [link](https://glennwilliams.me/r4psych/)
+
+  - Book: A Language, not a Letter: Learning Statistics in R [link](https://ademos.people.uic.edu/index.html)
+
+  - Book: Foundations of Statistics with R [link](https://mathstat.slu.edu/~speegle/_book/preface.html)
+
+  - Book: Statistical Rethinking with brms, ggplot2, and the tidyverse [link](https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/)
+
+  - Course: Data Science: Foundations using R [link](https://www.coursera.org/specializations/data-science-foundations-r#courses)
+
+  - Example: Doing an Analysis of Variance (ANOVA) in R [link](https://cran.r-project.org/web/packages/afex/vignettes/afex_anova_example.html)
+
+
+## Python
+
+  - Book: Python for Everybody: Exploring Data Using Python 3 [link](http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
+
+  - Course; Python for Everybody Specialization [link](https://www.coursera.org/specializations/python#courses)
+
+  - Data Analysis in Python with Pandas [link](https://www.youtube.com/watch?v=yzIMircGU5I&list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y)
+
+  - Data Visualization in Python using Matplotlib [link](https://www.youtube.com/watch?v=UO98lJQ3QGI&list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_)
+
+  - Example: Doing an Analysis of Variance (ANOVA) in Python [link](https://reneshbedre.github.io/blog/anova.html)
+
+
+# Reproducible Research
+
+> Until quite recently, making research open required a great deal of extra work for researchers and was less likely to be done. Now, with available tools, the benefits of openness can be a by-product of time-saving efficiencies, because tools that reduce data headaches also result in science that is more transparent, reproducible, collaborative and freely accessible to others.\ 
+*([Lowndes et al., 2017](https://www.nature.com/articles/s41559-017-0160))*
+
+```{r echo=F, out.width='60%', fig.cap="*Source*: Our path to better science in less time using open data science tools"}
+knitr::include_graphics(here('Input','rep_res1.png'))
+```
+
+
+  - **FAIR** Principles:
+
+    - *Findable*
+
+    - *Accessible*
+
+    - *Interoperable*
+  
+    - *Reusable*
+
+ - The FAIR Guiding Principles for scientific data management and stewardship [link](https://www.nature.com/articles/sdata201618)
+
+
+
+### Folder Structure
+
+```{r echo=F, out.width='120%'}
+knitr::include_graphics(here('Input','folder_struc5.png'))
+```
+
+
+  - Setting up an Organised Folder Structure for Research Projects [link](http://nikola.me/folder_structure.html)
+  
+  - Transition your workflow, keep your sanity [link](https://slides.com/djnavarro/workflow#/)
+
+  - Organising Your Data [link](https://www.data.cam.ac.uk/data-management-guide/organising-your-data)
+  
+  - 23 (research data) Things [link](https://www.ands.org.au/working-with-data/skills/23-research-data-things/all23)
+
+  - Project-oriented workflow [link](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+
+### Git
+
+```{r echo=F, out.width='50%', fig.cap="*Source*: [phdcomics.com](http://phdcomics.com/comics.php?f=1531)"}
+knitr::include_graphics(here('Input','git1.gif'))
+```
+
+  - Happy Git and GitHub for the useR [link](https://happygitwithr.com/index.html)
+
+  - The Turing Way: Version Control [link](https://the-turing-way.netlify.app/version_control/version_control.html)
+  
+  - Reproducible workflow and version control with Git and Github [link](https://jules32.github.io/2016-07-12-Oxford/git/)
+    
+
+
+
+
+### Rmarkdown and Jupyter Notebooks
+
+  - How does an Rmarkdown file look like? [link](https://cran.r-project.org/web/packages/emmeans/vignettes/basics.html#backstory)
+  
+  - How does a Jupyter notebook file look like? [link](https://osf.io/9c7b3/)
+
+  - Rmarkdown - Introduction and Basics [link](https://www.youtube.com/watch?v=tKUufzpoHDE&t=796s)
+  
+  - Reproducible analysis using R, Rmarkdown, and the tidyverse [link](https://www.youtube.com/watch?v=qvPDE4ppAns&list=PLKW2Azk23ZtSOUnLafEn0W1FEf-Rw-8pi&index=3&t=8873s)
+  
+  - Using Jupyter notebooks for interactive analyses and reproducible science [link](https://www.youtube.com/watch?v=9jxiUl4R8IM&list=PLKW2Azk23ZtSOUnLafEn0W1FEf-Rw-8pi&index=2&t=6296s) 
+
+
+
+# Data Sharing
+
+
+## Open Science Framework (OSF)
+
+OSF is a free, open-source Web tool designed to help researchers collaboratively manage, store, and share their research process and files related to their research (Source: [Soderberg, 2018](https://journals.sagepub.com/doi/full/10.1177/2515245918757689)). You can [preregister](https://help.osf.io/hc/en-us/articles/360019930893-Register-Your-Project) a study, upload a [preprint](https://help.osf.io/hc/en-us/articles/360019930533-Upload-a-Preprint), and connect your [Github](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project) repository, [Goggle Drive](https://help.osf.io/hc/en-us/articles/360019737374-Connect-Google-Drive-to-a-Project), or [oneDrive](https://help.osf.io/hc/en-us/articles/360019929873-Connect-OneDrive-to-a-Project) to your project.
+
+
+  - A sample project [link](https://osf.io/esxc4/)
+
+  - An OSF beginner tutorial [link](https://www.youtube.com/watch?v=dLEIhJESIQA&t=18s)
+
+  - *Paper*: Using OSF to Share Data: A Step-by-Step Guide: [link](https://journals.sagepub.com/doi/full/10.1177/2515245918757689)
+
+
+## Zenodo
+
+Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN. It allows researchers to deposit data sets, research software, reports, and any other research related digital artifacts. For each submission, a persistent digital object identifier (DOI) is minted, which makes the stored items easily citeable. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Zenodo))
+
+  - A sample project [link](https://zenodo.org/record/3821990#.XsJg2JMzY8Y)
+
+  - How to upload files to Zenodo [file](https://www.youtube.com/watch?v=I4Ka953JeYE&t=2s)
+
