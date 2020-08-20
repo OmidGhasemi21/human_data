@@ -1,5 +1,5 @@
 ---
-title: '<div class="jumbotron"><h1 class="title toc-ignore display-3">Studying Human Behaviour: From Testing to Publishing</h1></div>'
+title: '<div class="jumbotron"><h1 class="title toc-ignore display-3">Human Data: From Gathering to Publishing</h1></div>'
 author: | 
   | Omid Ghasemi
   | PhD Student at Macquarie University
