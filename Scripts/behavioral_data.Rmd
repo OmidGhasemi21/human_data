@@ -1,8 +1,9 @@
 ---
-title: '<div class="jumbotron"><h1 class="title toc-ignore display-3">Human Data: From Gathering to Publishing</h1></div>'
-author: | 
-  | Omid Ghasemi
-  | PhD Student at Macquarie University
+title: '<div class="jumbotron"><h1 class="title toc-ignore display-3">Human Data: From Gathering to Sharing</h1></div>'
+author:
+  - name: "Omid Ghasemi"
+    email: omidreza.ghasemi@hdr.mq.edu.au
+    affiliation: Department of Cognitive Science, Macquarie University
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
@@ -60,9 +61,11 @@ a:hover {
 >PsychoPy is an free cross-platform package allowing you run a wide range of in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics...). 
 (Source: [Psychopy website](https://www.psychopy.org/))
 
-```{r echo=F, out.width='90%'}
-knitr::include_graphics(here('Input','psychopy1.png'))
+
+```{r echo=F, out.width='49%', out.height="300px",fig.cap="Psychopy: Task Builder And The Actual Task",fig.show='hold',fig.align='center'}
+knitr::include_graphics(c(here('Input','psychopy1.png'),here('Input','psychopy4.png')))
 ```
+
 
   - Build your first PsychoPy experiment [Link](https://www.youtube.com/watch?v=VV6qhuQgsiI&t=35s)\ 
 
@@ -86,9 +89,10 @@ knitr::include_graphics(here('Input','psychopy1.png'))
 
 ### Qualtrics
 
-```{r echo=F, out.width='70%'}
-knitr::include_graphics(here('Input','qualtrics1.png'))
+```{r echo=F, out.width='49%', out.height="300px",fig.cap="Qualtrics: Builder View And The Actual Survey",fig.show='hold',fig.align='center'}
+knitr::include_graphics(c(here('Input','qualtrics1.png'),here('Input','qualtrics2.png')))
 ```
+
 
   - Demo: A simple numeracy task [link](https://mqedu.qualtrics.com/jfe/form/SV_4JDPzVOvnHHeulT)
 
@@ -125,9 +129,12 @@ knitr::include_graphics(here('Input','psychopy3.png'))
 >The Gorilla Experiment Builder is a cloud based research platform that allows researchers and students to quickly and easily create and deploy behavioural (reaction-time) experiments online 
 (Source: [Gorilla website](https://gorilla.sc/info/behaviouralresearch))
 
-```{r echo=F, out.width='70%'}
-knitr::include_graphics(here('Input','gorilla1.png'))
+```{r echo=F, out.width='49%', out.height="350px",fig.cap="Gorilla: Task Builder And The Actual Task",fig.show='hold',fig.align='center'}
+knitr::include_graphics(c(here('Input','gorilla3.png'),here('Input','gorilla2.png')))
+
 ```
+
+
 
   - Demo: The dot-probe task [link](https://research.sc/task/1416119)
 
@@ -283,6 +290,12 @@ knitr::include_graphics(here('Input','git1.gif'))
 
 
 ### Rmarkdown and Jupyter Notebooks
+
+>R Markdown provides an authoring framework for data science. You can use a single R Markdown file to both
+save and execute code 
+[and] generate high quality reports that can be shared with an audience
+R Markdown documents are fully reproducible and support dozens of static and dynamic output formats.
+(Source: [rstudio.com](https://rmarkdown.rstudio.com/lesson-1.html)) 
 
   - How does an Rmarkdown file look like? [link](https://cran.r-project.org/web/packages/emmeans/vignettes/basics.html#backstory)
   
