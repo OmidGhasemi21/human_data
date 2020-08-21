@@ -103,6 +103,26 @@ knitr::include_graphics(c(here('Input','qualtrics1.png'),here('Input','qualtrics
   - And a more advanced Qualtrics tutorial [link](https://www.youtube.com/watch?v=Y1-jtA-XjFQ&t=201s)
 
 
+### formR
+>Formr is a PHP micro-framework which installs easily and helps you build, layout and validate forms quickly, painlessly, and without all the complicated, messy overhead.
+(Source: [formr Github Page](https://github.com/formr/Formr))
+
+```{r echo=F, out.width='80%', out.height="490px"}
+knitr::include_graphics(here('Input','formr1.png'))
+```
+
+
+  - A nice introduction to Building a Registration Form [link](https://www.youtube.com/watch?v=Lg8VQwuNCPE&feature=youtu.be)
+  
+  - Building a Form: the Basics [link](https://formr.github.io/)
+  
+  
+  
+### REDCap
+>REDCap is a secure web application for building and managing online surveys and databases. While REDCap can be used to collect virtually any type of data, it is specifically geared to support online or offline data capture for research studies and operations 
+(Source: [project-redcap.org](https://www.project-redcap.org/))
+
+
 ### Psychopy (PsychoJS)/Pavlovia
 
 >PsychoJS is a JavaScript library that makes it possible to run neuroscience, psychology, and psychophysics experiments in a browser. It is the online counterpart of the PsychoPy Python library (Source: [PsychoJs repository](https://github.com/psychopy/psychojs)). *Pavlovia.org* is a site created by the PsychoPy team to make it easy to run studies online, host your experiments, share studies with other scientists, and version control your work. 
@@ -172,11 +192,6 @@ jsPsych is a JavaScript library for running behavioral experiments in a web brow
   - Create an online experiment using Jaysire [part 1](https://cskemp.github.io/chdss2019_content/day2/slides/1-experiment-motivation-handout.pdf) [part 2](https://cskemp.github.io/chdss2019_content/day2/slides/3-template-experiment-handout.pdf) [part 3](https://cskemp.github.io/chdss2019_content/day2/slides/4-more-complex-experiments-handout.pdf)
 
   - Behavioural experiments with jaysire [link](https://github.com/OmidGhasemi21/jaysire)
-
-
-### REDCap
->REDCap is a secure web application for building and managing online surveys and databases. While REDCap can be used to collect virtually any type of data, it is specifically geared to support online or offline data capture for research studies and operations 
-(Source: [project-redcap.org](https://www.project-redcap.org/))
 
 
 ### Empirica
