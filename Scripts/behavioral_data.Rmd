@@ -32,6 +32,16 @@ library("tidyverse")
 
 
 <style>
+.fluid-row {
+  text-align: "center";
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+dev .toc {
+  padding: 20px;
+  margin-top: 20px;
+}
 a:visited {
   color: green;
 }
@@ -62,8 +72,12 @@ a:hover {
 (Source: [Psychopy website](https://www.psychopy.org/))
 
 
-```{r echo=F, out.width='49%', out.height="300px",fig.cap="Psychopy: Task Builder And The Actual Task",fig.show='hold',fig.align='center'}
-knitr::include_graphics(c(here('Input','psychopy1.png'),here('Input','psychopy4.png')))
+```{r echo=F, out.width='50%', out.height="300px"}
+knitr::include_graphics(here('Input','psychopy1.png'))
+```
+
+```{r echo=F, out.width='50%', out.height="300px"}
+knitr::include_graphics(here('Input','psychopy5.png'))
 ```
 
 
@@ -89,10 +103,13 @@ knitr::include_graphics(c(here('Input','psychopy1.png'),here('Input','psychopy4.
 
 ### Qualtrics
 
-```{r echo=F, out.width='49%', out.height="300px",fig.cap="Qualtrics: Builder View And The Actual Survey",fig.show='hold',fig.align='center'}
-knitr::include_graphics(c(here('Input','qualtrics1.png'),here('Input','qualtrics2.png')))
+```{r echo=F, out.width='50%', out.height="300px"}
+knitr::include_graphics(here('Input','qualtrics1.png'))
 ```
 
+```{r echo=F, out.width='50%', out.height="300px"}
+knitr::include_graphics(here('Input','qualtrics2.png'))
+```
 
   - Demo: A simple numeracy task [link](https://mqedu.qualtrics.com/jfe/form/SV_4JDPzVOvnHHeulT)
 
@@ -107,8 +124,8 @@ knitr::include_graphics(c(here('Input','qualtrics1.png'),here('Input','qualtrics
 >Formr is a PHP micro-framework which installs easily and helps you build, layout and validate forms quickly, painlessly, and without all the complicated, messy overhead.
 (Source: [formr Github Page](https://github.com/formr/Formr))
 
-```{r echo=F, out.width='80%', out.height="490px"}
-knitr::include_graphics(here('Input','formr1.png'))
+```{r echo=F, out.width='60%', out.height="300px"}
+knitr::include_graphics(here('Input','formr2.png'))
 ```
 
 
@@ -128,7 +145,7 @@ knitr::include_graphics(here('Input','formr1.png'))
 >PsychoJS is a JavaScript library that makes it possible to run neuroscience, psychology, and psychophysics experiments in a browser. It is the online counterpart of the PsychoPy Python library (Source: [PsychoJs repository](https://github.com/psychopy/psychojs)). *Pavlovia.org* is a site created by the PsychoPy team to make it easy to run studies online, host your experiments, share studies with other scientists, and version control your work. 
 (Source: [Psychopy website](https://www.psychopy.org/online/usingPavlovia.html))
 
-```{r echo=F, out.width='90%'}
+```{r echo=F, out.width='50%', out.height="300px"}
 knitr::include_graphics(here('Input','psychopy3.png'))
 ```
 
@@ -149,11 +166,14 @@ knitr::include_graphics(here('Input','psychopy3.png'))
 >The Gorilla Experiment Builder is a cloud based research platform that allows researchers and students to quickly and easily create and deploy behavioural (reaction-time) experiments online 
 (Source: [Gorilla website](https://gorilla.sc/info/behaviouralresearch))
 
-```{r echo=F, out.width='49%', out.height="350px",fig.cap="Gorilla: Task Builder And The Actual Task",fig.show='hold',fig.align='center'}
-knitr::include_graphics(c(here('Input','gorilla3.png'),here('Input','gorilla2.png')))
 
+```{r echo=F, out.width='50%', out.height="300px"}
+knitr::include_graphics(here('Input','gorilla3.png'))
 ```
 
+```{r echo=F, out.width='50%', out.height="300px"}
+knitr::include_graphics(here('Input','gorilla2.png'))
+```
 
 
   - Demo: The dot-probe task [link](https://research.sc/task/1416119)
@@ -198,7 +218,7 @@ jsPsych is a JavaScript library for running behavioral experiments in a web brow
 > Empirica is an open-source JavaScript framework for running multiplayer interactive experiments and games in the browser. It was created to make it easy to develop and iterate on sophisticated designs in a statistically sound manner, and offers a unique combination of power, flexibility, and speed. 
 (Source: [empirica.ly](https://empirica.ly/))
 
-```{r echo=F, out.width='70%'}
+```{r echo=F, out.width='60%', out.height="300px"}
 knitr::include_graphics(here('Input','empirica1.png'))
 ```
 
