@@ -191,14 +191,25 @@ knitr::include_graphics(here('Input','gorilla2.png'))
 
 jsPsych is a JavaScript library for running behavioral experiments in a web browser. The library provides a flexible framework for building a wide range of laboratory-like experiments that can be run online (Source: [jsPsych website](https://www.jspsych.org/))
 
+
+```{r echo=F, out.width='70%', out.height="300px"}
+knitr::include_graphics(here('Input','jspsych.png'))
+```
+
+
   - Create a simple Reaction Time Task [link](https://www.jspsych.org/tutorials/rt-task/)
 
   - A more detailed tutorial on jsPsych and Google app engine [link](http://ccss.djnavarro.net/talks/2017/UNSWCCS_browser.pdf)
 
   - Online linguistics experiments using jsPsych (Na-Young Ry, 2018) [link](http://individual.utoronto.ca/rrrnny/online.html)
+  
+  - jsPsych Coding Tutorial with Volunteer Science [link](https://www.youtube.com/watch?v=r3Q-pflwhYg&list=WL&index=52&t=4s)
 
   - *Paper*: jsPsych: A JavaScript library for creating behavioral experiments in a Web browser [link](https://link.springer.com/article/10.3758/s13428-014-0458-y)
-
+  
+  - You can easily run your jspsych experiment on a server using [cognition.run](https://www.cognition.run/)
+  
+  - Alternatively, you can host your experiment on [Pavlovia](https://pavlovia.org/js-psych), [Gorilla](https://app.gorilla.sc/support/articles/jspsych), or [Qualtrics](https://kywch.github.io/jsPsych-in-Qualtrics/)
 
 
 ### Jaysire
@@ -229,6 +240,8 @@ knitr::include_graphics(here('Input','empirica1.png'))
   
   - Using Empirica for high-throughput virtual lab experiments (an interesting experiment) [Link](https://www.youtube.com/watch?v=NGBDgVWp0jc&feature=emb_title)\ 
   
+
+
 # Data Cleaning and Analysis
 
 ## R
